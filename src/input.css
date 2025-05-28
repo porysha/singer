@@ -59,7 +59,7 @@
         @apply hidden;
     }
     .bak {
-        background: url(/Public/image/background.webp);
+        background: url(image/background.webp);
     }
     .back-gallary {
         background: url(/Public/image/BG-SVG/moji.jpg);
