@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Swiper demo</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+        />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+
+        <!-- Demo styles -->
+        <style>
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Swiper -->
+        <section
+            class="Concert my-20 py-20 bg-gradient-to-r from-violet-500 to-violet-700"
+        >
+            <div class="container">
+                <div class="flex justify-center flex-col">
+                    <!-- product header -->
+                    <div class="flex justify-between items-end mb-5 md:mb-12">
+                        <div>
+                            <h3 class="section-title text-zinc-100">
+                                کنسرت ها و رویداد ها
+                            </h3>
+                        </div>
+                        <div class="flex gap-x-2">
+                            <span
+                                class="p-2 bg-white rounded-full text-black cursor-pointer hover:bg-zinc-700 hover:text-white"
+                            >
+                                <svg class="size-5">
+                                    <use href="#right-icon"></use>
+                                </svg>
+                            </span>
+                            <span
+                                class="p-2 bg-white rounded-full text-black cursor-pointer hover:bg-zinc-700 hover:text-white"
+                            >
+                                <svg class="size-5">
+                                    <use href="#left-icon"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-x-8 mx-auto items-center"
+                    >
+                        <!-- concerts-->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Concert -->
+                                <div class="swiper-slide border">
+                                    <div
+                                        class="max-w-64 bg-gray-200 shadow-lg grid rounded-xl overflow-hidden"
+                                    >
+                                        <div class="relative">
+                                            <img
+                                                class="w-full max-h-[170px]"
+                                                src="/Public/image/hamimConcert/c5.jpg"
+                                                alt=""
+                                            />
+                                            <div
+                                                class="grid gap-2 lg:gap-y-4 p-3"
+                                            >
+                                                <h2
+                                                    class="font-DanaMedium text-xl text-center"
+                                                >
+                                                    کنسرت استانبول
+                                                </h2>
+                                                <div
+                                                    class="flex justify-between items-center flex-col lg:flex-row gap-2"
+                                                >
+                                                    <div class="flex gap-x-1">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#calender-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            <span
+                                                                class="text-violet-700"
+                                                                >24</span
+                                                            >
+                                                            خرداد</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex gap-px">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#map-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            ترکیه , استانبول
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="download h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-xl text-white font-MorabbaMedium flex-center gap-x-1 hover:to-indigo-500 transition-colors"
+                                                >
+                                                    <a href=""> دانلود اهنگ </a>
+                                                    <svg class="size-5">
+                                                        <use
+                                                            href="#download-icon"
+                                                        ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide border">
+                                    <div
+                                        class="max-w-64 bg-gray-200 shadow-lg grid rounded-xl overflow-hidden"
+                                    >
+                                        <div class="relative">
+                                            <img
+                                                src="/Public/image/hamimConcert/c2.jfif"
+                                                alt=""
+                                            />
+                                            <div
+                                                class="grid gap-2 lg:gap-y-4 p-3"
+                                            >
+                                                <h2
+                                                    class="font-DanaMedium text-xl text-center"
+                                                >
+                                                    کنسرت انکارا
+                                                </h2>
+                                                <div
+                                                    class="flex justify-between items-center flex-col lg:flex-row gap-2"
+                                                >
+                                                    <div class="flex gap-x-1">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#calender-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            <span
+                                                                class="text-violet-700"
+                                                                >25</span
+                                                            >
+                                                            خرداد</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex gap-px">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#map-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            ترکیه , انکارا
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="download h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-xl text-white font-MorabbaMedium flex-center gap-x-1 hover:to-indigo-500 transition-colors"
+                                                >
+                                                    <a href=""> دانلود اهنگ </a>
+                                                    <svg class="size-5">
+                                                        <use
+                                                            href="#download-icon"
+                                                        ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide border">
+                                    <div
+                                        class="max-w-64 bg-gray-200 shadow-lg grid rounded-xl overflow-hidden"
+                                    >
+                                        <div class="relative">
+                                            <img
+                                                src="/Public/image/hamimConcert/c3.jfif"
+                                                alt=""
+                                            />
+                                            <div
+                                                class="grid gap-2 lg:gap-y-4 p-3"
+                                            >
+                                                <h2
+                                                    class="font-DanaMedium text-xl text-center"
+                                                >
+                                                    کنسرت دبی
+                                                </h2>
+                                                <div
+                                                    class="flex justify-between items-center flex-col lg:flex-row gap-2"
+                                                >
+                                                    <div class="flex gap-x-1">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#calender-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            <span
+                                                                class="text-violet-700"
+                                                                >27</span
+                                                            >
+                                                            خرداد</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex gap-px">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#map-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            قطر , دبی
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="download h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-xl text-white font-MorabbaMedium flex-center gap-x-1 hover:to-indigo-500 transition-colors"
+                                                >
+                                                    <a href=""> دانلود اهنگ </a>
+                                                    <svg class="size-5">
+                                                        <use
+                                                            href="#download-icon"
+                                                        ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide border">
+                                    <div
+                                        class="max-w-64 bg-gray-200 shadow-lg grid rounded-xl overflow-hidden"
+                                    >
+                                        <div class="relative">
+                                            <img
+                                                src="/Public/image/hamimConcert/c4.jfif"
+                                                alt=""
+                                            />
+                                            <div
+                                                class="grid gap-2 lg:gap-y-4 p-3"
+                                            >
+                                                <h2
+                                                    class="font-DanaMedium text-xl text-center"
+                                                >
+                                                    کنسرت کیش
+                                                </h2>
+                                                <div
+                                                    class="flex justify-between items-center flex-col lg:flex-row gap-2"
+                                                >
+                                                    <div class="flex gap-x-1">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#calender-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            <span
+                                                                class="text-violet-700"
+                                                                >30</span
+                                                            >
+                                                            خرداد</span
+                                                        >
+                                                    </div>
+                                                    <div class="flex gap-px">
+                                                        <svg class="size-5">
+                                                            <use
+                                                                href="#map-icon"
+                                                            ></use>
+                                                        </svg>
+                                                        <span class="text-sm">
+                                                            ایران , جزیره ی کیش
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="download h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-xl text-white font-MorabbaMedium flex-center gap-x-1 hover:to-indigo-500 transition-colors"
+                                                >
+                                                    <a href=""> دانلود اهنگ </a>
+                                                    <svg class="size-5">
+                                                        <use
+                                                            href="#download-icon"
+                                                        ></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Swiper JS -->
+        <script src="scripts/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+    </body>
+</html>
